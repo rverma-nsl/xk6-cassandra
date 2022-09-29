@@ -5,7 +5,6 @@ go 1.18
 replace github.com/gocql/gocql => github.com/scylladb/gocql v1.7.2
 
 require (
-	github.com/dop251/goja v0.0.0-20220927172339-ea66e911853d
 	github.com/gocql/gocql v1.2.1
 	go.k6.io/k6 v0.40.0
 
@@ -13,6 +12,7 @@ require (
 
 require (
 	github.com/dlclark/regexp2 v1.7.0 // indirect
+	github.com/dop251/goja v0.0.0-20220927172339-ea66e911853d // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/go-sourcemap/sourcemap v2.1.4-0.20211119122758-180fcef48034+incompatible // indirect
 	github.com/golang/snappy v0.0.4 // indirect
@@ -27,7 +27,7 @@ require (
 	github.com/serenize/snaker v0.0.0-20201027110005-a7ad2135616e // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
 	github.com/spf13/afero v1.9.2 // indirect
-	golang.org/x/sys v0.0.0-20220927170352-d9d178bc13c6 // indirect
+	golang.org/x/sys v0.0.0-20220928140112-f11e5e49a4ec // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20220922220347-f3bd1da661af // indirect
 	gopkg.in/guregu/null.v3 v3.5.0 // indirect

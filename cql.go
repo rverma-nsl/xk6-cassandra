@@ -89,7 +89,7 @@ func (*CQL) CheckTable(session *gocql.Session, keyspace string, table string) bo
 }
 
 func (*CQL) Insert(session *gocql.Session, keyspace string, table string, col []string, vals []string) error {
-	stmt := fmt.Sprintf("INSERT INTO %s.%s ( %s ) VALUES ( '%s' );", keyspace, table, strings.Join(col, ","), strings.Join(vals, "', '"))
+	stmt := fmt.Sprintf("INSERT INTO %s.%s ( %s ) VALUES ( '%s' );", keyspace, table, strings.Join(col, ","), strings.Join(vals, ","))
 	if err := session.Query(stmt).Exec(); err != nil {
 		log.Fatal(err)
 	}

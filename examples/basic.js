@@ -55,7 +55,7 @@ export default function () {
     for (let i = 1; i <= 10; i++) {
         if (tenantBit[i - 1] === 1) {
             col.push(`str${i}`)
-            vals.push(randomString(32))
+            vals.push(`'${randomString(32)}'`)
         }
     }
     cql.insert(db, keyspace, 'record', col, vals)
